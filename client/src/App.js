@@ -1,20 +1,28 @@
-import React from 'react';
-import '../src/styles/index.css'
-import './App.css';
+import React from 'react'
+import { Container } from 'reactstrap'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-// Import components
-import NavBar from '../src/components/NavBar'
-// import GitHubCal from './components/GitHubCal'
-import GitHubCalendar from 'react-github-calendar'
+// components
+import Home from './components/About'
+import WebDev from './components/WebDev'
+import GameDev from './components/GameDev'
+import Contact from './components/Contact'
 
+import './styles/index.css'
 
-
-function App() {
+function App(props) {
   return (
-    <div className="container">
-      <NavBar />
-    </div>
-  );
+    <Container>
+      <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={ Home } {...props} />
+            <Route exact path="/WebDev" component={ WebDev} {...props} />
+            <Route exact path="/GameDev" component={ GameDev } {...props} />
+            <Route exact path="/Contact" component={ Contact } {...props} />
+          </Switch>
+      </BrowserRouter>
+    </Container>
+  )
 }
 
-export default App;
+export default App

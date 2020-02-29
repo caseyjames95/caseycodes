@@ -12,6 +12,9 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
 
+// Components
+import Contact from '../Contact'
+
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
