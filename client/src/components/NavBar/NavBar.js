@@ -8,6 +8,7 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
 
@@ -24,16 +25,16 @@ const NavBar = (props) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink id="navSection" href="/">Home</NavLink>
+                            <NavLink id="navSection"><Link to="/">Home</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink id="navSection" href="/">Web Dev</NavLink>
+                            <NavLink id="navSection"><Link to="/WebDev">Web Dev</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink id="navSection" href="/">Game Dev</NavLink>
+                            <NavLink id="navSection"><Link to="/GameDev">Game Dev</Link></NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink id="navSection" href="/">Contact</NavLink>
+                            <NavLink id="navSection"><Link to="/Contact">Contact</Link></NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -3,11 +3,11 @@ NavItem {
 }
 
 #navTitle {
-    color: rgba(237, 154, 0, 0.769);
+    color: orange;
 }
 
 #navSection {
-    color: rgba(237, 154, 0, 0.769);
+    color: orange;
 }
 
 NavBar {
