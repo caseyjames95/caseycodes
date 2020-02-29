@@ -3,9 +3,13 @@ NavItem {
 }
 
 #navTitle {
-    color: blue;
+    color: rgba(237, 154, 0, 0.769);
 }
 
 #navSection {
-    color: black;
+    color: rgba(237, 154, 0, 0.769);
+}
+
+NavBar {
+    margin-top: 0%;
 }
