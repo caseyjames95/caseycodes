@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 
 // Import components
-import Fullpage from '../src/components/Fullpage'
+import NavBar from '../src/components/NavBar'
 
 function App() {
   return (
-    <Fullpage />
+    <NavBar />
   );
 }
 
