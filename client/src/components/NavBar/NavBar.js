@@ -22,7 +22,7 @@ const NavBar = (props) => {
     
     return (
         <div className="container">
-            <Navbar color="clear" light expand="md">
+            <Navbar color="clear" light expand="sm">
                 <NavbarBrand id="navTitle" href="/">Casey<strong>Codes</strong></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
@@ -33,9 +33,9 @@ const NavBar = (props) => {
                         <NavItem>
                             <NavLink id="navSection"><Link to="/WebDev">Web Dev</Link></NavLink>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLink id="navSection"><Link to="/GameDev">Game Dev</Link></NavLink>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
                             <NavLink id="navSection"><Link to="/Contact">Contact</Link></NavLink>
                         </NavItem>

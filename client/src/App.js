@@ -16,7 +16,7 @@ function App(props) {
       <BrowserRouter>
           <Switch>
             <Route exact path="/" component={ Home } {...props} />
-            <Route exact path="/WebDev" component={ WebDev} {...props} />
+            <Route exact path="/WebDev" component={ WebDev } {...props} />
             <Route exact path="/GameDev" component={ GameDev } {...props} />
             <Route exact path="/Contact" component={ Contact } {...props} />
           </Switch>
